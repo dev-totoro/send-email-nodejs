@@ -20,13 +20,13 @@ function init() {
     // verify configuration
     transporter.verify(function (error, success) {
       if (error) {
-        console.log("Init mail sender failure %o", error);
+        console.log("Init mail sender failure ", error);
       } else {
         console.log("Init mail sender successfully");
       }
     });
   } catch (error) {
-    console.log("Init mail sender failure %o", error);
+    console.log("Init mail sender failure ", error);
   }
 }
 
